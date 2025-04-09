@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        
+        <div id="ui-container">
+            <div class="score-display">Score: <span id="current-score">0</span></div>
+            <div class="score-display">High Score: <span id="high-score">0</span></div>
+        </div>
+        
+        <div id="level-display">Level 1</div>
+        
+        <div class="controls-guide">
+            Use Mouse or Up/Down Arrow Keys to move the paddle
+        </div>
+        
+        <div id="game-over">
+            <h2 class="screen-title">Game Over!</h2>
+            <p class="screen-subtitle">Your Score: <span id="final-score">0</span></p>
+            <button class="game-button" id="restart-button">Play Again</button>
+        </div>
+        
+        <div id="level-complete">
+            <h2 class="screen-title">Level Complete!</h2>
+            <p class="screen-subtitle">Get ready for Level <span id="next-level">2</span></p>
+            <button class="game-button" id="next-level-button">Continue</button>
+        </div>
+        
+        <div id="start-screen">
+            <h1>PING PONG</h1>
+            <p>Classic ping pong with 3 levels of increasing difficulty! Score points by hitting the ball past the computer opponent.</p>
+            <p>Complete all 3 levels to win the game!</p>
+            <button class="game-button" id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
